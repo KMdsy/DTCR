@@ -1,6 +1,6 @@
 # Read me file
 
-[Chinese version](./readme_zh.md)
+[Chinese version](./readme_cn.md)
 
 Tensorflow implementation of paper 'Learning Representations for Time Series Clustering' (NIPS 2019 accept paper).
 **This code is not the official version.**
