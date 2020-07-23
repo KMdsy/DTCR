@@ -110,7 +110,7 @@ def dRNN(cell, inputs, rate, scope='default'):
     
     #sequence_length: 由两个因素决定，一个是从placeholder中告知的，一个是前面的补0，其实应该由第一个因素来决定
     #dilated_states：应该是[b*rate,,hidden_units],意义应该是RNN层在并行的处理了这个batch的数据后的final state
-    dilated_outputs, dilated_states = tf.nn.static_rnn(#output shape ?? list, len = dialated_n_steps, each of them is [b*rate, hidden_units]
+    dilated_outputs, _ = tf.nn.static_rnn(#output shape ?? list, len = dialated_n_steps, each of them is [b*rate, hidden_units]
         cell, 
         dilated_inputs,
         dtype=tf.float32, 
@@ -129,6 +129,8 @@ def dRNN(cell, inputs, rate, scope='default'):
     # remove padded zeros
     #list, len = n_step(不加pad的时候的数目), each of them is [b, hidden_units]
     outputs = unrolled_outputs[:n_steps]#可以增加返回状态的项，decoder要用
+    
+    dilated_states = outputs[-1]#对于GRU，state就是输出，所以只要截取最后一个时刻的输出即可
 
     return outputs, dilated_states
 
