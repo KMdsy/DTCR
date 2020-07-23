@@ -1,0 +1,6 @@
+/.project
+/.pydevproject
+/.vscode
+/train_img
+/train_log
+/__pycache__
