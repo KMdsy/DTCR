@@ -26,8 +26,8 @@ RI (Rand Index) is employed as performance (same as the paper).
 I used [this version](https://stackoverflow.com/questions/49586742/rand-index-function-clustering-performance-evaluation) of the RI implementation since there is no official implementation method in sklearn package.
 
 I run each experiment runs 5 times and report means and stand deviations.
-The *best* column represents the best performance in all the experiments.
-The *paper* column lists the RI reported by the paper.
+The `best` column represents the best performance in all the experiments.
+The `paper` column lists the RI reported by the paper.
 
 
 ### Configs
@@ -77,4 +77,4 @@ Data preprocessing method: Normalized
 
 # Requirements
 
-Tensorflow >= 1.13.2
+`Tensorflow` >= 1.13.2
