@@ -30,7 +30,7 @@
 [这里](https://stackoverflow.com/questions/49586742/rand-index-function-clustering-performance-evaluation)的一个实现。
 
 下表是我的一些实验结果，每个配置下的网络独立运行5次，并列出了均值与标准差（mean ± std.）,
-*best*列为所有实验中的最佳值，*paper*列则为论文中所报告的值。表中加粗的部分为最佳复现结果。
+`best`列为所有实验中的最佳值，`paper`列则为论文中所报告的值。表中加粗的部分为最佳复现结果。
 
 
 
