@@ -9,18 +9,20 @@
 
 如果您在使用本代码的过程中发现任何错误或有任何疑问，请您提交issues，或者联系我：shaoyu1122@foxmail.com
 
-> 原文信息
->
+原文信息
 > Ma, Q., Zheng, J., Li, S., & Cottrell, G. W. (2019). Learning representations for time series clustering. 
 > In Advances in neural information processing systems (pp. 3781-3791).
->
-> @inproceedings{ma2019learning,
->   title={Learning representations for time series clustering},
->   author={Ma, Qianli and Zheng, Jiawei and Li, Sen and Cottrell, Gary W},
->   booktitle={Advances in neural information processing systems},
->   pages={3781--3791},
->   year={2019}
-> }
+
+Bibtex
+```
+@inproceedings{ma2019learning,
+  title={Learning representations for time series clustering},
+  author={Ma, Qianli and Zheng, Jiawei and Li, Sen and Cottrell, Gary W},
+  booktitle={Advances in neural information processing systems},
+  pages={3781--3791},
+  year={2019}
+}
+```
 
 
 
@@ -84,4 +86,4 @@ Config8：encoder_hidden_units = [50, 30, 30], lambda = 0.001.
 
 # Requirements
 
-Tensorflow >= 1.13.2
+Tensorflow>=1.13.2
